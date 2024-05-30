@@ -1,0 +1,35 @@
+{
+  "name": "ci-books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anikeshk/ci-books.git"
+  },
+  "author": "anikeshk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anikeshk/ci-books/issues"
+  },
+  "homepage": "https://github.com/anikeshk/ci-books#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^9.2.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.4"
+  }
+}
