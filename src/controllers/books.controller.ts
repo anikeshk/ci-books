@@ -23,6 +23,7 @@ export const BookController = {
         description: newBook.description,
         published: newBook.published,
         pages: newBook.pages,
+        author: newBook.author,
         createdAt: newBook.createdAt,
         updatedAt: newBook.updatedAt,
       };
