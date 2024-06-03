@@ -71,13 +71,14 @@ export const BookController = {
           description: newBook.description,
           published: newBook.published,
           pages: newBook.pages,
+          author: newBook.author,
           createdAt: newBook.createdAt,
           updatedAt: newBook.updatedAt,
         };
         return res.status(200).json({ data, status: 'success' });
       }
     } catch (error) {
-      return res.status(500).json({ status: 'error', code: 500, message: 'Internal Sever Error' });
+      return res.status(500).json({ status: 'error', message: 'Internal Sever Error' });
     }
   },
   deleteBook: async (req: Request, res: Response) => {
